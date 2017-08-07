@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.premkchoudhary.government.LoginActivity"
+    android:layout_marginRight="24dp"
+    android:layout_marginLeft="24dp"
+    >
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/text_description"
+         android:id="@+id/txtDesc"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_marginTop="40dp"
+         android:layout_centerHorizontal="true"
+         />
+
+        <Button
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoogle"
+            android:text="@string/login_gmail"
+            android:textAlignment="center"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_below="@id/txtDesc"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/btnGoogle"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Enter your username/password"
+         android:id="@+id/txtDesc1"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_marginTop="21dp"
+         android:layout_below="@+id/view"
+         android:layout_alignRight="@+id/txtDesc"
+         android:layout_alignEnd="@+id/txtDesc" />
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_username"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/txtDesc1"
+         android:layout_marginTop="16dp">
+
+         <EditText
+             android:id="@+id/input_username"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Username" />
+
+     </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_password"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/input_layout_username"
+        android:layout_marginTop="8dp"
+         >
+         <EditText
+             android:id="@+id/input_password"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Password" />
+
+     </android.support.design.widget.TextInputLayout>
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/btnLogin"
+         android:text="Login"
+         android:textAlignment="center"
+         android:background="@android:color/holo_blue_dark"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:layout_marginTop="32dp"
+         android:layout_below="@id/input_layout_password"
+         android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:weightSum="2"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:id="@+id/txtForgot"
+            android:layout_below="@id/view"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:gravity="left"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User?"
+            android:id="@+id/txtRegister"
+            android:layout_below="@id/view"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

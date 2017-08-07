@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Government</string>
+    <string name="title_activity_login">Sign in</string>
+
+   <string name="login_gmail"> Sign in with gmail</string>
+   <string name="text_description">Use your existing online profile</string>
+
+</resources>
