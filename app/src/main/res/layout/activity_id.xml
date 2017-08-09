@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.premkchoudhary.government.ID"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAN"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:id="@+id/txtPAN"
+        android:layout_marginTop="15dp"
+        />
+
+    <View
+        android:id="@+id/viewOnID"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/txtPAN"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About PAN"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/txtAboutPan"
+        android:layout_below="@id/viewOnID"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPANdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_pan"
+        android:textSize="12dp"
+        android:layout_below="@id/txtAboutPan"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/viewBelowAboutPan"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/txtPANdesc"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtHowToApplyPan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to apply for PAN :"
+        android:textSize="16dp"
+        android:layout_below="@id/viewBelowAboutPan"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtOnlineApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/online_application"
+        android:layout_below="@id/txtHowToApplyPan"
+        android:layout_marginTop="8dp"
+        />
+    
+    <TextView
+        android:id="@+id/txtHyperOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to apply online"
+       android:layout_below="@id/txtOnlineApp"
+        android:layout_marginTop="4dp"
+        />
+
+        <TextView
+            android:id="@+id/txtApplicationCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PAN_application_center"
+            android:layout_below="@id/txtHyperOnline"
+            android:layout_marginTop="8dp"/>
+    <LinearLayout
+        android:id="@+id/linearApplyPan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtApplicationCenter">
+    <TextView
+        android:id="@+id/txtHyperNSDL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(a) NSDL"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/txtHyperUTITSL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   (b) UTITSL"
+        android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBelowAppylPan"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/linearApplyPan"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtForms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forms"
+        android:textStyle="bold"
+        android:layout_below="@id/viewBelowAppylPan"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtApplyForPAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply for PAN"
+        android:textStyle="bold"
+        android:layout_below="@id/txtForms"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtChangePANData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Your PAN Data"
+        android:textStyle="bold"
+        android:layout_below="@id/txtApplyForPAN"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/viewBelowChangePanData"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/txtChangePANData"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDocuments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Documents required for PAN application"
+        android:textStyle="bold"
+        android:layout_below="@id/viewBelowChangePanData"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtListDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These are the documents required for PAN application"
+        android:layout_below="@id/txtDocuments"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtDocumentSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See more"
+        android:textStyle="bold"
+        android:layout_below="@id/txtListDocument"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtStatusPAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status of PAN"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/txtDocumentSeeMore"
+        android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtNSDLStatusPAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NSDL"
+            android:textStyle="bold"
+            android:layout_below="@id/txtStatusPAN"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/txtUTITSLStatusPAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UTITSL"
+            android:textStyle="bold"
+            android:layout_below="@id/txtNSDLStatusPAN"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:id="@+id/viewBelowStatusOfPAN"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPANVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_pan_verify"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPANVerificationDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_pan_verfiy_desc"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/txtPANVerificationDescSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="see more"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/viewBelowPANVerification"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPANGrievances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_grievances"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPANGrievancesDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_grievances_desc"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPANGrievancesSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/viewBelowPANGrievances"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/txtAssessingOfficer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assessing_officer"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/txtAssessingOfficerSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/viewBelowAssessingOfficer"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPanQueries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_queries"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txtPAN_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PAN_validity"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor=""
+            />
+        <TextView
+            android:id="@+id/txtMore_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_pan"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtpan_deductor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_deductor"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtIncome_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income_return"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtPanQueriesSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/viewBelowPANQuery"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPan_tutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_tutorial"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/txtPan_tutorialSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/viewTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/txtChangePANData"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

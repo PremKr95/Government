@@ -24,7 +24,10 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ID" />
+        <activity android:name=".Property" />
+        <activity android:name=".Bank"></activity>
     </application>
 
 </manifest>

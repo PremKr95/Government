@@ -22,26 +22,6 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     @Override
-    public boolean areAllItemsEnabled() {
-        return false;
-    }
-
-    @Override
-    public boolean isEnabled(int position) {
-        return false;
-    }
-
-    @Override
-    public void registerDataSetObserver(DataSetObserver observer) {
-
-    }
-
-    @Override
-    public void unregisterDataSetObserver(DataSetObserver observer) {
-
-    }
-
-    @Override
     public int getCount() {
         return mThumbIds.length;
     }
@@ -62,6 +42,7 @@ public class ImageAdapter extends BaseAdapter {
         LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (view == null) {
             // if it's not recycled, initialize some attributes
+
             gridview =new View(mContext);
             gridview = inflater.inflate(R.layout.grid_layout,null);
             ImageView ivimage = (ImageView) gridview.findViewById(R.id.ivset);
@@ -77,13 +58,17 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     private Integer[] mThumbIds = {
+            R.drawable.pan, R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher, R.mipmap.ic_launcher,
             R.mipmap.ic_launcher, R.mipmap.ic_launcher,
             R.mipmap.ic_launcher, R.mipmap.ic_launcher,
             R.mipmap.ic_launcher, R.mipmap.ic_launcher,
             R.mipmap.ic_launcher, R.mipmap.ic_launcher
     };
 
-    private String[] stringarray = {"First" ,"second" ,"third" , "fourth" ,"fivth" ,"sixth" ,"seventh" ,"eight"};
+    private String[] stringarray = {"ID" ,"PROPERTY" ,"BANK" ,
+            "CARRERS" ,"EXAMINATION" ,"SCHOLARSHIPS" ,"TRAFFIC" ,"TRANSPORT",
+            "ONE" , "TWO" , "THREE" , "FOUR"};
 
 
 }

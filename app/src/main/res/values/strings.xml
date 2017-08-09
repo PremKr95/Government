@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Government</string>
     <string name="title_activity_login">Sign in</string>
-
-   <string name="login_gmail"> Sign in with gmail</string>
-   <string name="text_description">Use your existing online profile</string>
+    <string name="login_gmail"> Sign in with gmail</string>
+    <string name="text_description">Use your existing online profile</string>
+    <string name="about_pan">Permanent Account N​umber (PAN) is a ten-digit alphanumeric number, issued in the form of a laminated card by the Income Tax Department, to ​any "person" who applies for it or to whom the department allots the number</string>
+    <string name="online_application"><b>Online Application - </b> An online application can be made from the website of UTIITSL or NSDL</string>
+    <string name="PAN_application_center"><b>2) Through PAN Application Center - </b> Application for PAN can be submitted at the PAN Application center </string>
+    <string name="online_pan_verify"><b>Online PAN Verif​ication</b></string>
+    <string name="online_pan_verfiy_desc">By using the Online PAN Verification facility, one can know/verify the Permanent Account ​Number (PAN). This facility is referred to as "PAN Verification" or "Know Your PAN</string>
+    <string name="pan_grievances"><b>PAN Grievances</b></string>
+    <string name="pan_grievances_desc">Income-tax department has an electronic portal for lodging PAN Grievances through Aayakar Sampark Kendra..</string>
+    <string name="assessing_officer"><b>Know Your Assessing Officer</b></string>
+    <string name="pan_queries"><b>Your Queries on PAN</b></string>
+    <string name="PAN_validity"><b>What is the validity of PAN ?</b></string>
+    <string name="more_pan"><b>Can a Person hold more than one PAN ?</b></string>
+    <string name="pan_deductor"><b>​Should I intimate my PAN to deductor ?</b></string>
+    <string name="income_return">​​Is it mandatory to file return of income after getting PAN?</string>
+    <string name="pan_tutorial"><b>Tutorial on Permanent Account Number - </b></string>
 
 </resources>
